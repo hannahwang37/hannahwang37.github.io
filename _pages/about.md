@@ -15,7 +15,7 @@ redirect_from:
 
 ---
 
-## 🔬 Research Interests
+<!-- ## 🔬 Research Interests
 
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
 
@@ -39,7 +39,7 @@ redirect_from:
 
 </div>
 
----
+--- -->
 
 ## 🎓 Education
 
@@ -73,23 +73,171 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 
 ## 📚 Selected Publications
 
-<div style="display: grid; gap: 20px; margin: 20px 0;">
+<style>
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-<div style="border: 1px solid #e1e8ed; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <h3 style="color: #1da1f2; margin-top: 0;">🎨 Topology Guidance</h3>
-  <p><strong>Xiaohan Wang</strong> and Matthew Berger, "Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology", <em>arXiv preprint</em>, 2025.</p>
-</div>
+.publication-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #fafafa;
+  position: relative;
+}
 
-<div style="border: 1px solid #e1e8ed; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <h3 style="color: #1da1f2; margin-top: 0;">💭 EmotionLens</h3>
-  <p>Bingyuan Wang, Qing Shi, <strong>Xiaohan Wang</strong>, et al., "EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds" in <em>Visual Informatics</em>, 2025.</p>
-</div>
+.publication-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  color: #2c3e50;
+  padding-right: 80px; /* Add right padding to avoid overlap with year */
+}
 
-<div style="border: 1px solid #e1e8ed; border-radius: 12px; padding: 20px; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <h3 style="color: #1da1f2; margin-top: 0;">👥 GitHub Impersonation</h3>
-  <p>Yueke Zhang, Anda Liang, <strong>Xiaohan Wang</strong>, et al., "Who's Pushing the Code? An Exploration of GitHub Impersonation" in <em>IEEE/ACM International Conference on Software Engineering (ICSE)</em>, 2025.</p>
-</div>
+.publication-authors {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+  font-style: italic;
+}
 
+.publication-venue {
+  font-size: 14px;
+  color: #2980b9;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.publication-year {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.publication-tags {
+  margin-bottom: 15px;
+}
+
+.publication-type-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.type-conference {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.type-journal {
+  background-color: #27ae60;
+  color: white;
+}
+
+.type-preprint {
+  background-color: #f39c12;
+  color: white;
+}
+
+.research-domain-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+}
+
+.publication-links {
+  font-size: 13px;
+}
+
+.publication-links a {
+  color: #3498db;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 6px 12px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.publication-links a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.timeline-year {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #95a5a6;
+}
+</style>
+
+<div class="publications-container">
+  <ul class="publication-list">
+    <li class="publication-item">
+      <div class="timeline-year">2025</div>
+      <div class="publication-title">Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology</div>
+      <div class="publication-authors">Xiaohan Wang and Matthew Berger</div>
+      <div class="publication-venue">arXiv preprint</div>
+      
+      <div class="publication-tags">
+        <span class="publication-type-tag type-preprint">preprint</span>
+        <span class="research-domain-tag">Machine Learning</span>
+        <span class="research-domain-tag">Generative Models</span>
+        <span class="research-domain-tag">Topology</span>
+      </div>
+    </li>
+
+    <li class="publication-item">
+      <div class="timeline-year">2025</div>
+      <div class="publication-title">EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds</div>
+      <div class="publication-authors">Bingyuan Wang, Qing Shi, Xiaohan Wang, et al.</div>
+      <div class="publication-venue">Visual Informatics</div>
+      
+      <div class="publication-tags">
+        <span class="publication-type-tag type-journal">journal</span>
+        <span class="research-domain-tag">Visualization</span>
+        <span class="research-domain-tag">Text Analysis</span>
+        <span class="research-domain-tag">Emotion Analysis</span>
+      </div>
+    </li>
+
+    <li class="publication-item">
+      <div class="timeline-year">2025</div>
+      <div class="publication-title">Who's Pushing the Code? An Exploration of GitHub Impersonation</div>
+      <div class="publication-authors">Yueke Zhang, Anda Liang, Xiaohan Wang, et al.</div>
+      <div class="publication-venue">IEEE/ACM International Conference on Software Engineering (ICSE)</div>
+      
+      <div class="publication-tags">
+        <span class="publication-type-tag type-conference">conference</span>
+        <span class="research-domain-tag">Software Engineering</span>
+        <span class="research-domain-tag">Security</span>
+        <span class="research-domain-tag">GitHub Analysis</span>
+      </div>
+    </li>
+  </ul>
 </div>
 
 ---

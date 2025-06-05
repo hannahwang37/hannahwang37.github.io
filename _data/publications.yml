@@ -16,7 +16,7 @@ publications:
     type: "journal"
     domains: ["InfoVis", "NLP", "HCI"]
     paperurl: "https://www.sciencedirect.com/science/article/pii/S2468502X25000063"
-    slidesurl: "https://drive.google.com/file/d/1y1lBn3B9Htej0_8wzedDutHJGnWBQo2R/view?usp=sharing"
+    slidesurl: ""
     bibtexurl: ""
 
   - title: "Who's Pushing the Code? An Exploration of GitHub Impersonation"
@@ -25,7 +25,7 @@ publications:
     year: 2025
     type: "conference"
     domains: ["SE", "HCI"]
-    paperurl: ""
+    paperurl: "https://yuhuang-lab.github.io/paper/ICSE25_Github_camera.pdf"
     slidesurl: ""
     bibtexurl: ""
 
