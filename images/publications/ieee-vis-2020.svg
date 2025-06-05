@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background: linear-gradient(135deg, #3f51b5 0%, #2196f3 100%);">
+  <!-- Background gradient -->
+  <rect width="400" height="300" fill="url(#visGrad)"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="visGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3f51b5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196f3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="volumeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#64b5f6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 3D Volume representation -->
+  <g id="volume3D">
+    <!-- Main volume cube -->
+    <g transform="translate(200,150)">
+      <!-- Front face -->
+      <rect x="-40" y="-30" width="80" height="60" fill="url(#volumeGrad)" stroke="rgba(255,255,255,0.6)" stroke-width="2" rx="5"/>
+      
+      <!-- Top face (isometric) -->
+      <path d="M-40 -30 L-20 -50 L60 -50 L40 -30 Z" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+      
+      <!-- Right face (isometric) -->
+      <path d="M40 -30 L60 -50 L60 10 L40 30 Z" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+      
+      <!-- Volume data points -->
+      <circle cx="-20" cy="-10" r="3" fill="#ff5722" opacity="0.8"/>
+      <circle cx="10" cy="5" r="4" fill="#4caf50" opacity="0.8"/>
+      <circle cx="-10" cy="15" r="2" fill="#ffeb3b" opacity="0.8"/>
+      <circle cx="25" cy="-5" r="3" fill="#e91e63" opacity="0.8"/>
+      <circle cx="5" cy="-15" r="2" fill="#9c27b0" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- Multi-user indicators -->
+  <g id="users">
+    <!-- User 1 -->
+    <g transform="translate(80,80)">
+      <circle cx="0" cy="0" r="20" fill="rgba(76, 175, 80, 0.2)" stroke="#4caf50" stroke-width="2"/>
+      <circle cx="0" cy="-5" r="8" fill="#4caf50"/>
+      <rect x="-6" y="3" width="12" height="15" fill="#4caf50" rx="6"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">User 1</text>
+    </g>
+    
+    <!-- User 2 -->
+    <g transform="translate(320,80)">
+      <circle cx="0" cy="0" r="20" fill="rgba(233, 30, 99, 0.2)" stroke="#e91e63" stroke-width="2"/>
+      <circle cx="0" cy="-5" r="8" fill="#e91e63"/>
+      <rect x="-6" y="3" width="12" height="15" fill="#e91e63" rx="6"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">User 2</text>
+    </g>
+    
+    <!-- User 3 -->
+    <g transform="translate(80,220)">
+      <circle cx="0" cy="0" r="20" fill="rgba(255, 152, 0, 0.2)" stroke="#ff9800" stroke-width="2"/>
+      <circle cx="0" cy="-5" r="8" fill="#ff9800"/>
+      <rect x="-6" y="3" width="12" height="15" fill="#ff9800" rx="6"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">User 3</text>
+    </g>
+    
+    <!-- User 4 -->
+    <g transform="translate(320,220)">
+      <circle cx="0" cy="0" r="20" fill="rgba(103, 58, 183, 0.2)" stroke="#673ab7" stroke-width="2"/>
+      <circle cx="0" cy="-5" r="8" fill="#673ab7"/>
+      <rect x="-6" y="3" width="12" height="15" fill="#673ab7" rx="6"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">User 4</text>
+    </g>
+  </g>
+  
+  <!-- Collaboration lines -->
+  <g stroke-width="2" fill="none" opacity="0.6">
+    <line x1="100" y1="80" x2="180" y2="130" stroke="#4caf50" stroke-dasharray="5,5"/>
+    <line x1="300" y1="80" x2="220" y2="130" stroke="#e91e63" stroke-dasharray="5,5"/>
+    <line x1="100" y1="220" x2="180" y2="170" stroke="#ff9800" stroke-dasharray="5,5"/>
+    <line x1="300" y1="220" x2="220" y2="170" stroke="#673ab7" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Real-time sync indicators -->
+  <g id="syncIndicators">
+    <circle cx="140" cy="120" r="4" fill="#4caf50">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="120" r="4" fill="#e91e63">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="180" r="4" fill="#ff9800">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="180" r="4" fill="#673ab7">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+    Multi-user Collaborative
+  </text>
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16">
+    Volume Data Visualization
+  </text>
+  
+  <!-- Conference info -->
+  <text x="200" y="285" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="12">
+    IEEE Visualization 2020
+  </text>
+</svg> 

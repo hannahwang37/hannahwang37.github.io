@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+  <!-- Background gradient -->
+  <rect width="400" height="300" fill="url(#grad1)"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Vector field representation -->
+  <g id="vectorField" opacity="0.7">
+    <!-- Arrows representing vector field -->
+    <g stroke="white" stroke-width="2" fill="white">
+      <!-- Row 1 -->
+      <path d="M50 80 L70 70 L70 75 L80 70 L70 85 L70 90 Z"/>
+      <path d="M120 80 L140 85 L140 80 L150 85 L140 90 L140 95 Z"/>
+      <path d="M190 80 L210 75 L210 80 L220 75 L210 85 L210 90 Z"/>
+      <path d="M260 80 L280 80 L280 75 L290 80 L280 85 L280 90 Z"/>
+      <path d="M330 80 L350 85 L350 80 L360 85 L350 90 L350 95 Z"/>
+      
+      <!-- Row 2 -->
+      <path d="M50 130 L70 125 L70 130 L80 125 L70 135 L70 140 Z"/>
+      <path d="M120 130 L140 130 L140 125 L150 130 L140 135 L140 140 Z"/>
+      <path d="M190 130 L210 135 L210 130 L220 135 L210 140 L210 145 Z"/>
+      <path d="M260 130 L280 125 L280 130 L290 125 L280 135 L280 140 Z"/>
+      <path d="M330 130 L350 130 L350 125 L360 130 L350 135 L350 140 Z"/>
+      
+      <!-- Row 3 -->
+      <path d="M50 180 L70 185 L70 180 L80 185 L70 190 L70 195 Z"/>
+      <path d="M120 180 L140 175 L140 180 L150 175 L140 185 L140 190 Z"/>
+      <path d="M190 180 L210 180 L210 175 L220 180 L210 185 L210 190 Z"/>
+      <path d="M260 180 L280 185 L280 180 L290 185 L280 190 L280 195 Z"/>
+      <path d="M330 180 L350 175 L350 180 L360 175 L350 185 L350 190 Z"/>
+    </g>
+  </g>
+  
+  <!-- Critical points -->
+  <g id="criticalPoints">
+    <circle cx="150" cy="130" r="8" fill="#ff6b6b" stroke="white" stroke-width="2"/>
+    <circle cx="280" cy="180" r="8" fill="#4ecdc4" stroke="white" stroke-width="2"/>
+    <circle cx="200" cy="100" r="6" fill="#feca57" stroke="white" stroke-width="2"/>
+  </g>
+  
+  <!-- Flow lines -->
+  <g id="flowLines" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none">
+    <path d="M30 60 Q100 80 170 100 Q240 120 310 140"/>
+    <path d="M30 200 Q100 180 170 160 Q240 140 310 120"/>
+    <path d="M80 40 Q150 60 220 80 Q290 100 360 120"/>
+    <path d="M80 220 Q150 200 220 180 Q290 160 360 140"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    Topology Guidance
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="265" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="14">
+    Controlling Generative Models via Vector Field Topology
+  </text>
+</svg> 
