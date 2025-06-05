@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Xiaohan Wang (王晓涵), a Ph.D. student in Computer Science at Vanderbilt University, where I am advised by [Prof. Matthew Berger](https://engineering.vanderbilt.edu/bio/?pid=matthew-berger). My research focuses on **visual analysis for neural fields**, exploring how machine learning techniques can improve visual data exploration and how visualization can enhance various aspects of machine learning.
+I am Xiaohan Wang, a Ph.D. student in Computer Science at Vanderbilt University, where I am advised by [Prof. Matthew Berger](https://engineering.vanderbilt.edu/bio/?pid=matthew-berger). My research focuses on **visual analysis for neural fields**, exploring how machine learning techniques can improve visual data exploration and how visualization can enhance various aspects of machine learning.
 
 Research Interests
 ======
