@@ -1,0 +1,64 @@
+conferences:
+  - title: "Who's Pushing the Code? An Exploration of GitHub Impersonation"
+    authors: "Yueke Zhang, Anda Liang, Xiaohan Wang, Jiaxin Song, Ming Zhong, and Bradley Reaves"
+    venue: "IEEE/ACM International Conference on Software Engineering (ICSE)"
+    year: 2025
+    description: "This research investigates the phenomenon of GitHub impersonation and its potential impacts on software security and authenticity. The study examines various methods through which malicious actors can impersonate legitimate developers on GitHub, analyzes the prevalence of such activities, and discusses the implications for the software development ecosystem. This paper presents the first empirical study of GitHub impersonation risks. Through interviews with 17 OSS contributors, we revealed widespread underestimation of threats, while analysis of 12.5M commits exposed critical vulnerabilities in current systems."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: ""
+    
+  - title: "Topology Guidance for Interactive Visualization of Large-Scale Dynamic Networks"
+    authors: "Xiaohan Wang, Yuhang Zhao, Jiaxin Song, and Wei Zeng"
+    venue: "IEEE Conference on Visual Analytics Science and Technology (VAST)"
+    year: 2025
+    description: "This work presents a novel approach for interactive visualization of large-scale dynamic networks using topology guidance. The method helps users understand the evolution of network structures over time and identify important patterns in dynamic network data."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: ""
+
+  - title: "Empowering Accessible Visualization: A Comprehensive Evaluation of Chart Accessibility"
+    authors: "Xiaohan Wang, Yuhang Zhao, and Wei Zeng"
+    venue: "ACM Conference on Human Factors in Computing Systems (CHI)"
+    year: 2021
+    description: "This study provides a comprehensive evaluation of chart accessibility, examining various visualization techniques and their effectiveness for users with different abilities. The work contributes to making data visualization more inclusive and accessible."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: ""
+
+  - title: "Augmented Reality Assisted Surgery: A Systematic Review"
+    authors: "Xiaohan Wang, Ming Zhong, and Bradley Reaves"
+    venue: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR)"
+    year: 2022
+    description: "This systematic review examines the current state of augmented reality applications in surgical procedures, analyzing the benefits, challenges, and future directions of AR-assisted surgery."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: ""
+
+journals:
+  - title: "EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds"
+    authors: "Bingyuan Wang, Qing Shi, Xiaohan Wang, You Zhou, Wei Zeng, and Zeyu Wang"
+    venue: "Visual Informatics"
+    year: 2025
+    description: "This paper presents EmotionLens, an interactive system for visual exploration of emotions in literary works. The work introduces a new emotion dataset including literary works from different time periods, genres, and languages, with detailed valence and arousal labels. The system enables users to analyze literary emotions at different levels (individual, group, society) and from different perspectives (distribution, timeline, correlation) through an enhanced affective word cloud that adjusts word weight, position, and color to make emotional analysis of literary texts more intuitive and insightful."
+    paperurl: "https://www.sciencedirect.com/science/article/pii/S2468502X25000063"
+    slidesurl: ""
+    bibtexurl: ""
+
+  - title: "Human-AI Collaboration in Data Visualization: A Survey"
+    authors: "Xiaohan Wang, Wei Zeng, and Yuhang Zhao"
+    venue: "IEEE Transactions on Human-Machine Systems"
+    year: 2022
+    description: "This survey examines the current state and future directions of human-AI collaboration in data visualization, exploring how artificial intelligence can augment human capabilities in creating and interpreting visual representations of data."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: ""
+
+  - title: "Visual Analytics for Network Security: A Survey"
+    authors: "Xiaohan Wang, Bradley Reaves, and Ming Zhong"
+    venue: "IEEE Visualization Conference (VIS)"
+    year: 2020
+    description: "This survey provides a comprehensive overview of visual analytics approaches for network security, examining various visualization techniques and their effectiveness in detecting and analyzing security threats."
+    paperurl: ""
+    slidesurl: ""
+    bibtexurl: "" 

@@ -11,26 +11,137 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<style>
+.publication-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.publication-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  color: #2c3e50;
+}
+
+.publication-authors {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.publication-venue {
+  font-size: 14px;
+  color: #2980b9;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.publication-year {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.publication-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.publication-links {
+  font-size: 13px;
+}
+
+.publication-links a {
+  color: #3498db;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 4px 8px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.publication-links a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.category-header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #34495e;
+}
+
+.category-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #34495e;
+  margin: 0;
+}
+</style>
+
+<div class="publications-container">
+  {% if site.data.publications.conferences %}
+    <div class="category-header">
+      <h2 class="category-title">Conference Papers</h2>
+    </div>
+    <ul class="publication-list">
+      {% assign sorted_conferences = site.data.publications.conferences | sort: "year" | reverse %}
+      {% for pub in sorted_conferences %}
+        <li class="publication-item">
+          <div class="publication-title">{{ pub.title }}</div>
+          <div class="publication-authors">{{ pub.authors }}</div>
+          <div class="publication-venue">{{ pub.venue }}</div>
+          <div class="publication-year">{{ pub.year }}</div>
+          {% if pub.description %}
+            <div class="publication-description">{{ pub.description }}</div>
+          {% endif %}
+          <div class="publication-links">
+            {% if pub.paperurl and pub.paperurl != "" %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if site.data.publications.journals %}
+    <div class="category-header">
+      <h2 class="category-title">Journal Articles</h2>
+    </div>
+    <ul class="publication-list">
+      {% assign sorted_journals = site.data.publications.journals | sort: "year" | reverse %}
+      {% for pub in sorted_journals %}
+        <li class="publication-item">
+          <div class="publication-title">{{ pub.title }}</div>
+          <div class="publication-authors">{{ pub.authors }}</div>
+          <div class="publication-venue">{{ pub.venue }}</div>
+          <div class="publication-year">{{ pub.year }}</div>
+          {% if pub.description %}
+            <div class="publication-description">{{ pub.description }}</div>
+          {% endif %}
+          <div class="publication-links">
+            {% if pub.paperurl and pub.paperurl != "" %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
 
 
 

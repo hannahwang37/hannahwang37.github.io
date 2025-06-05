@@ -65,13 +65,11 @@ redirect_from:
 
 I am currently working on **feature-driven parameter space exploration of simulation ensembles**, where I develop bidirectional latent spaces that bridge simulation parameters and outputs, enabling real-time inverse design from user-specified features. This work leverages **Implicit Neural Representations (INRs)** for highly compressed yet accurate field representations and supports multi-scale feature analysis. -->
 
-### 🎯 TopologyGuidance 
+<!-- ### 🎯 TopologyGuidance 
 
 Prior to my current work, I developed **TopologyGuidance**, a novel method to control diffusion model outputs using vector field topology. This research proved particularly effective on 2D vector fields in fluid dynamics simulations, accurately maintaining critical points and enabling enhanced ensemble analysis.
 
-</div>
-
----
+</div> -->
 
 ## 📚 Selected Publications
 
