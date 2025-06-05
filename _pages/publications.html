@@ -24,6 +24,7 @@ author_profile: true
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   background-color: #fafafa;
+  position: relative;
 }
 
 .publication-title {
@@ -51,14 +52,52 @@ author_profile: true
 .publication-year {
   font-size: 14px;
   color: #7f8c8d;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
-.publication-description {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
-  margin-bottom: 10px;
+.publication-tags {
+  margin-bottom: 15px;
+}
+
+.publication-type-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.type-conference {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.type-journal {
+  background-color: #27ae60;
+  color: white;
+}
+
+.type-preprint {
+  background-color: #f39c12;
+  color: white;
+}
+
+.research-domain-tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
 }
 
 .publication-links {
@@ -69,10 +108,12 @@ author_profile: true
   color: #3498db;
   text-decoration: none;
   margin-right: 15px;
-  padding: 4px 8px;
+  padding: 6px 12px;
   border: 1px solid #3498db;
   border-radius: 4px;
   transition: all 0.3s ease;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .publication-links a:hover {
@@ -80,62 +121,55 @@ author_profile: true
   color: white;
 }
 
-.category-header {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #34495e;
-}
-
-.category-title {
-  font-size: 24px;
+.timeline-year {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
   font-weight: bold;
-  color: #34495e;
-  margin: 0;
+  color: #95a5a6;
 }
 </style>
 
 <div class="publications-container">
-  {% if site.data.publications.conferences %}
-    <div class="category-header">
-      <h2 class="category-title">Conference Papers</h2>
-    </div>
+  {% if site.data.publications.publications %}
     <ul class="publication-list">
-      {% assign sorted_conferences = site.data.publications.conferences | sort: "year" | reverse %}
-      {% for pub in sorted_conferences %}
+      {% assign sorted_publications = site.data.publications.publications | sort: "year" | reverse %}
+      {% for pub in sorted_publications %}
         <li class="publication-item">
+          <div class="timeline-year">{{ pub.year }}</div>
           <div class="publication-title">{{ pub.title }}</div>
           <div class="publication-authors">{{ pub.authors }}</div>
           <div class="publication-venue">{{ pub.venue }}</div>
-          <div class="publication-year">{{ pub.year }}</div>
-          {% if pub.description %}
-            <div class="publication-description">{{ pub.description }}</div>
-          {% endif %}
-          <div class="publication-links">
-            {% if pub.paperurl and pub.paperurl != "" %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+          
+          <div class="publication-tags">
+            {% if pub.type %}
+              <span class="publication-type-tag type-{{ pub.type }}">{{ pub.type }}</span>
+            {% endif %}
+            
+            {% if pub.domains %}
+              {% for domain in pub.domains %}
+                <span class="research-domain-tag">{{ domain }}</span>
+              {% endfor %}
+            {% endif %}
           </div>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-  
-  {% if site.data.publications.journals %}
-    <div class="category-header">
-      <h2 class="category-title">Journal Articles</h2>
-    </div>
-    <ul class="publication-list">
-      {% assign sorted_journals = site.data.publications.journals | sort: "year" | reverse %}
-      {% for pub in sorted_journals %}
-        <li class="publication-item">
-          <div class="publication-title">{{ pub.title }}</div>
-          <div class="publication-authors">{{ pub.authors }}</div>
-          <div class="publication-venue">{{ pub.venue }}</div>
-          <div class="publication-year">{{ pub.year }}</div>
-          {% if pub.description %}
-            <div class="publication-description">{{ pub.description }}</div>
-          {% endif %}
+          
           <div class="publication-links">
-            {% if pub.paperurl and pub.paperurl != "" %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+            {% if pub.paperurl and pub.paperurl != "" %}
+              <a href="{{ pub.paperurl }}" target="_blank">
+                <i class="fas fa-file-pdf"></i> Paper
+              </a>
+            {% endif %}
+            {% if pub.slidesurl and pub.slidesurl != "" %}
+              <a href="{{ pub.slidesurl }}" target="_blank">
+                <i class="fas fa-presentation"></i> Slides
+              </a>
+            {% endif %}
+            {% if pub.bibtexurl and pub.bibtexurl != "" %}
+              <a href="{{ pub.bibtexurl }}" target="_blank">
+                <i class="fas fa-quote-left"></i> BibTeX
+              </a>
+            {% endif %}
           </div>
         </li>
       {% endfor %}

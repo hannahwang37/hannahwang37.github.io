@@ -1,35 +1,41 @@
-journals:
+publications:
+  - title: "Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology"
+    authors: "Xiaohan Wang, and Matthew Berger"
+    venue: "arXiv preprint"
+    year: 2025
+    type: "preprint"
+    domains: ["ML", "SciVis", "GenAI"]
+    paperurl: "https://arxiv.org/pdf/2505.06804"
+    slidesurl: ""
+    bibtexurl: ""
+
   - title: "EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds"
     authors: "Bingyuan Wang, Qing Shi, Xiaohan Wang, You Zhou, Wei Zeng, and Zeyu Wang"
     venue: "Visual Informatics"
     year: 2025
+    type: "journal"
+    domains: ["InfoVis", "NLP", "HCI"]
     paperurl: "https://www.sciencedirect.com/science/article/pii/S2468502X25000063"
     slidesurl: "https://drive.google.com/file/d/1y1lBn3B9Htej0_8wzedDutHJGnWBQo2R/view?usp=sharing"
+    bibtexurl: ""
+
+  - title: "Who's Pushing the Code? An Exploration of GitHub Impersonation"
+    authors: "Yueke Zhang, Anda Liang, Xiaohan Wang, Pam Wisniewski, Fengwei Zhang, Kevin Leach, and Yu Huang"
+    venue: "IEEE/ACM International Conference on Software Engineering (ICSE)"
+    year: 2025
+    type: "conference"
+    domains: ["SE", "HCI"]
+    paperurl: ""
+    slidesurl: ""
     bibtexurl: ""
 
   - title: "Interactive Extended Reality Techniques in Information Visualization"
     authors: "Richen Liu, Min Gao, Lijun Wang, Xiaohan Wang, et al."
     venue: "IEEE Transactions on Human-Machine Systems, vol 52, no. 6, pp. 1338-1351"
     year: 2022
+    type: "journal"
+    domains: ["InfoVis", "HCI"]
     paperurl: "https://drive.google.com/file/d/1bnykoMcl0kUW8j_wCtL4JDjUykg5oJNU/view?usp=share_link"
-    slidesurl: ""
-    bibtexurl: ""
-
-preprints:
-  - title: "Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology"
-    authors: "Xiaohan Wang, and Matthew Berger"
-    venue: "arXiv preprint"
-    year: 2025
-    paperurl: "https://arxiv.org/pdf/2505.06804"
-    slidesurl: ""
-    bibtexurl: ""
-
-conferences:
-  - title: "Who's Pushing the Code? An Exploration of GitHub Impersonation"
-    authors: "Yueke Zhang, Anda Liang, Xiaohan Wang, Pam Wisniewski, Fengwei Zhang, Kevin Leach, and Yu Huang"
-    venue: "IEEE/ACM International Conference on Software Engineering (ICSE)"
-    year: 2025
-    paperurl: ""
     slidesurl: ""
     bibtexurl: ""
 
@@ -37,6 +43,8 @@ conferences:
     authors: "Hansheng Wang, Xiaojian Chen, Zeyu Xia, Hailong Wang, Xiaohan Wang, and Richen Liu"
     venue: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR)"
     year: 2022
+    type: "conference"
+    domains: ["SciVis"]
     paperurl: ""
     slidesurl: ""
     bibtexurl: ""
@@ -45,6 +53,8 @@ conferences:
     authors: "Xiaohan Wang, Chuyu Zhang, Yu Zhu, Xueyi Chen, Liming Shen, Richen Liu, and Rongtao Qian"
     venue: "ACM SIGCHI Conference on Human Factors in Computing Systems Extended Abstracts (ACM CHI'21 EA)"
     year: 2021
+    type: "conference"
+    domains: ["InfoVis", "HCI"]
     paperurl: "https://drive.google.com/file/d/1Cor9S1WQ4PWDEJ0mSa3zc-sIit9uZVWk/view?usp=share_link"
     slidesurl: ""
     bibtexurl: ""
@@ -53,6 +63,8 @@ conferences:
     authors: "Chuyu Zhang, Xiaojian Chen, Yu Zhu, Xiaohan Wang, Siru Chen, Xiaodong Wen, and Richen Liu"
     venue: "IEEE Visualization 2020 (IEEE VIS)"
     year: 2020
+    type: "conference"
+    domains: ["SciVis"]
     paperurl: "https://drive.google.com/file/d/1NBw3T0lz_s0PzzmrqjOmDy8HYBwmJE1T/view?usp=share_link"
     slidesurl: ""
     bibtexurl: ""
