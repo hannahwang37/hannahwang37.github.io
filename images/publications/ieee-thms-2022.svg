@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="background: linear-gradient(135deg, #8360c3 0%, #2ebf91 100%);">
+  <!-- Background gradient -->
+  <rect width="400" height="300" fill="url(#xrGrad)"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="xrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8360c3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ebf91;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="holoGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#64b5f6;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- XR Environment representation -->
+  <g id="xrEnvironment">
+    <!-- Virtual space boundary -->
+    <ellipse cx="200" cy="150" rx="180" ry="120" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="10,5"/>
+    
+    <!-- 3D Data visualizations in space -->
+    <g id="dataVisualizations">
+      <!-- 3D Chart -->
+      <g transform="translate(120,100)">
+        <!-- Bar chart in 3D space -->
+        <rect x="0" y="0" width="8" height="30" fill="#ff5722" opacity="0.8"/>
+        <rect x="10" y="5" width="8" height="25" fill="#4caf50" opacity="0.8"/>
+        <rect x="20" y="10" width="8" height="20" fill="#2196f3" opacity="0.8"/>
+        <rect x="30" y="2" width="8" height="28" fill="#ff9800" opacity="0.8"/>
+        
+        <!-- 3D effect -->
+        <g transform="skewX(-10)">
+          <rect x="3" y="-3" width="8" height="30" fill="rgba(244, 67, 54, 0.5)"/>
+          <rect x="13" y="2" width="8" height="25" fill="rgba(76, 175, 80, 0.5)"/>
+          <rect x="23" y="7" width="8" height="20" fill="rgba(33, 150, 243, 0.5)"/>
+          <rect x="33" y="-1" width="8" height="28" fill="rgba(255, 152, 0, 0.5)"/>
+        </g>
+      </g>
+      
+      <!-- Network visualization -->
+      <g transform="translate(280,80)">
+        <circle cx="0" cy="0" r="6" fill="#e91e63"/>
+        <circle cx="20" cy="10" r="4" fill="#9c27b0"/>
+        <circle cx="-15" cy="15" r="5" fill="#3f51b5"/>
+        <circle cx="10" cy="-20" r="4" fill="#00bcd4"/>
+        
+        <!-- Connections -->
+        <line x1="0" y1="0" x2="20" y2="10" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+        <line x1="0" y1="0" x2="-15" y2="15" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+        <line x1="0" y1="0" x2="10" y2="-20" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+        <line x1="20" y1="10" x2="-15" y2="15" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+      </g>
+      
+      <!-- Heatmap/Surface -->
+      <g transform="translate(150,180)">
+        <rect x="0" y="0" width="80" height="50" fill="url(#holoGrad)" opacity="0.7" rx="5"/>
+        <g fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="8">
+          <text x="10" y="12">Temperature</text>
+          <text x="10" y="25">Gradient</text>
+          <text x="10" y="38">Visualization</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- XR Devices -->
+  <g id="xrDevices">
+    <!-- VR Headset -->
+    <g transform="translate(80,200)">
+      <ellipse cx="0" cy="0" rx="30" ry="20" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="2"/>
+      <circle cx="-12" cy="-5" r="8" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="12" cy="-5" r="8" fill="rgba(255,255,255,0.4)"/>
+      <rect x="-15" y="-15" width="30" height="5" fill="rgba(255,255,255,0.3)" rx="2"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">VR</text>
+    </g>
+    
+    <!-- AR Glasses -->
+    <g transform="translate(200,240)">
+      <rect x="-20" y="-8" width="40" height="4" fill="rgba(255,255,255,0.3)" rx="2"/>
+      <rect x="-15" y="-4" width="12" height="8" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="1"/>
+      <rect x="3" y="-4" width="12" height="8" fill="rgba(255,255,255,0.2)" stroke="white" stroke-width="1"/>
+      <text x="0" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">AR</text>
+    </g>
+    
+    <!-- MR Device -->
+    <g transform="translate(320,200)">
+      <ellipse cx="0" cy="0" rx="25" ry="18" fill="rgba(255,255,255,0.25)" stroke="white" stroke-width="2"/>
+      <rect x="-20" y="-8" width="40" height="16" fill="rgba(255,255,255,0.1)" stroke="white" stroke-width="1" rx="8"/>
+      <circle cx="-8" cy="-2" r="5" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="8" cy="-2" r="5" fill="rgba(255,255,255,0.4)"/>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">MR</text>
+    </g>
+  </g>
+  
+  <!-- Interaction beams -->
+  <g id="interactionBeams" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M80 180 Q120 140 150 120" stroke-dasharray="5,5"/>
+    <path d="M200 220 Q200 190 200 160" stroke-dasharray="5,5"/>
+    <path d="M320 180 Q280 140 250 110" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Information layers -->
+  <g id="infoLayers" opacity="0.6">
+    <!-- Data layer indicators -->
+    <circle cx="50" cy="80" r="20" fill="none" stroke="#ffeb3b" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="50" y="85" text-anchor="middle" fill="#ffeb3b" font-family="Arial, sans-serif" font-size="10">Layer 1</text>
+    
+    <circle cx="350" cy="120" r="20" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="350" y="125" text-anchor="middle" fill="#4caf50" font-family="Arial, sans-serif" font-size="10">Layer 2</text>
+    
+    <circle cx="70" cy="150" r="20" fill="none" stroke="#e91e63" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="70" y="155" text-anchor="middle" fill="#e91e63" font-family="Arial, sans-serif" font-size="10">Layer 3</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Interactive Extended Reality
+  </text>
+  <text x="200" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">
+    Techniques in Information Visualization
+  </text>
+  
+  <!-- Journal info -->
+  <text x="200" y="285" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="12">
+    IEEE Transactions on Human-Machine Systems 2022
+  </text>
+</svg> 

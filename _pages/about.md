@@ -19,17 +19,23 @@ redirect_from:
 
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
 
-🤖 **Machine Learning & Visualization**  
-*Developing novel approaches that bridge machine learning and data visualization*
+🤖 <strong>Machine Learning & Visualization</strong>  
+<em>Developing novel approaches that bridge machine learning and data visualization</em>
 
-🌐 **Neural Fields**  
-*Working on visual analysis techniques for neural field representations*
+<br>
 
-🎨 **Generative Models**  
-*Controlling generative model outputs through topological guidance*
+🌐 <strong>Neural Fields</strong>  
+<em>Working on visual analysis techniques for neural field representations</em>
 
-⚡ **Interactive Systems**  
-*Creating user-friendly interfaces for complex data exploration*
+<br>
+
+🎨 <strong>Generative Models</strong>  
+<em>Controlling generative model outputs through topological guidance</em>
+
+<br>
+
+⚡ <strong>Interactive Systems</strong>  
+<em>Creating user-friendly interfaces for complex data exploration</em>
 
 </div>
 
@@ -39,23 +45,25 @@ redirect_from:
 
 <div style="border-left: 4px solid #007acc; padding-left: 20px; margin: 20px 0;">
 
-**Ph.D. in Computer Science** 📍 *Vanderbilt University*  
-*Aug. 2023 - Expected May 2028*
+<strong>Ph.D. in Computer Science</strong> 📍 <em>Vanderbilt University</em>  
+<em>Aug. 2023 - Expected May 2028</em>
 
-**B.Eng. in Software Engineering** 📍 *Nanjing Normal University*  
-*Sep. 2019 - Jun. 2023*
+<br>
+
+<strong>B.Eng. in Software Engineering</strong> 📍 <em>Nanjing Normal University</em>  
+<em>Sep. 2019 - Jun. 2023</em>
 
 </div>
 
 ---
 
-## 🚀 Current Research
+<!-- ## 🚀 Current Research
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; margin: 20px 0;">
 
 ### 🔍 Feature-Driven Parameter Space Exploration
 
-I am currently working on **feature-driven parameter space exploration of simulation ensembles**, where I develop bidirectional latent spaces that bridge simulation parameters and outputs, enabling real-time inverse design from user-specified features. This work leverages **Implicit Neural Representations (INRs)** for highly compressed yet accurate field representations and supports multi-scale feature analysis.
+I am currently working on **feature-driven parameter space exploration of simulation ensembles**, where I develop bidirectional latent spaces that bridge simulation parameters and outputs, enabling real-time inverse design from user-specified features. This work leverages **Implicit Neural Representations (INRs)** for highly compressed yet accurate field representations and supports multi-scale feature analysis. -->
 
 ### 🎯 TopologyGuidance 
 
@@ -92,14 +100,18 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 
 <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 10px; padding: 20px; margin: 20px 0;">
 
-🥇 **Outstanding Student Scholarship - First Prize** (Top 5%)  
-*2020-2022*
+🥇 <strong>Outstanding Student Scholarship - First Prize</strong> (Top 5%)  
+<em>2020-2022</em>
 
-🏆 **Outstanding National Computer Design Competition** (Software Development) - First Prize  
-*2021*
+<br>
 
-⭐ **Elite Talent Program** (Top 30 students across university)  
-*Nanjing Normal University, 2020-2022*
+🏆 <strong>Outstanding National Computer Design Competition</strong> (Software Development) - First Prize  
+<em>2021</em>
+
+<br>
+
+⭐ <strong>Elite Talent Program</strong> (Top 30 students across university)  
+<em>Nanjing Normal University, 2020-2022</em>
 
 </div>
 
