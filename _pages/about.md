@@ -94,7 +94,7 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 
 .publication-teaser {
   flex-shrink: 0;
-  max-width: 250px;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -113,49 +113,49 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 }
 
 .publication-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  margin-bottom: 8px;
-  line-height: 1.3;
+  margin-bottom: 6px;
+  line-height: 1.2;
   color: #2c3e50;
   padding-right: 80px; /* Add right padding to avoid overlap with year */
 }
 
 .publication-authors {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-style: italic;
 }
 
 .publication-venue {
-  font-size: 14px;
+  font-size: 13px;
   color: #2980b9;
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .publication-year {
-  font-size: 14px;
+  font-size: 13px;
   color: #7f8c8d;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: 600;
 }
 
 .publication-tags {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .publication-type-tag {
   display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 18px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-right: 8px;
-  margin-bottom: 5px;
+  margin-right: 6px;
+  margin-bottom: 4px;
 }
 
 .type-conference {
@@ -175,12 +175,12 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 
 .research-domain-tag {
   display: inline-block;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
   font-weight: 500;
-  margin-right: 6px;
-  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: 4px;
   background-color: #ecf0f1;
   color: #2c3e50;
   border: 1px solid #bdc3c7;
