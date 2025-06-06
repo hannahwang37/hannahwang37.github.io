@@ -87,6 +87,29 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
   border-radius: 8px;
   background-color: #fafafa;
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.publication-teaser {
+  flex-shrink: 0;
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-teaser:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.publication-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .publication-title {
@@ -198,43 +221,51 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
   <ul class="publication-list">
     <li class="publication-item">
       <div class="timeline-year">2025</div>
-      <div class="publication-title">Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology</div>
-      <div class="publication-authors">Xiaohan Wang and Matthew Berger</div>
-      <div class="publication-venue">arXiv preprint</div>
-      
-      <div class="publication-tags">
-        <span class="publication-type-tag type-preprint">preprint</span>
-        <span class="research-domain-tag">Machine Learning</span>
-        <span class="research-domain-tag">Generative Models</span>
-        <span class="research-domain-tag">Topology</span>
+      <img src="/images/topology-guidance-teaser.png" alt="Topology Guidance Teaser" class="publication-teaser">
+      <div class="publication-content">
+        <div class="publication-title">Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology</div>
+        <div class="publication-authors">Xiaohan Wang and Matthew Berger</div>
+        <div class="publication-venue">arXiv preprint</div>
+        
+        <div class="publication-tags">
+          <span class="publication-type-tag type-preprint">preprint</span>
+          <span class="research-domain-tag">ML</span>
+          <span class="research-domain-tag">SciVis</span>
+          <span class="research-domain-tag">GenAI</span>
+        </div>
       </div>
     </li>
 
     <li class="publication-item">
       <div class="timeline-year">2025</div>
-      <div class="publication-title">EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds</div>
-      <div class="publication-authors">Bingyuan Wang, Qing Shi, Xiaohan Wang, et al.</div>
-      <div class="publication-venue">Visual Informatics</div>
-      
-      <div class="publication-tags">
-        <span class="publication-type-tag type-journal">journal</span>
-        <span class="research-domain-tag">Visualization</span>
-        <span class="research-domain-tag">Text Analysis</span>
-        <span class="research-domain-tag">Emotion Analysis</span>
+      <img src="/images/emotionlens-teaser.png" alt="EmotionLens Teaser" class="publication-teaser">
+      <div class="publication-content">
+        <div class="publication-title">EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds</div>
+        <div class="publication-authors">Bingyuan Wang, Qing Shi, Xiaohan Wang, et al.</div>
+        <div class="publication-venue">Visual Informatics</div>
+        
+        <div class="publication-tags">
+          <span class="publication-type-tag type-journal">journal</span>
+          <span class="research-domain-tag">InfoVis</span>
+          <span class="research-domain-tag">NLP</span>
+          <span class="research-domain-tag">HCI</span>
+        </div>
       </div>
     </li>
 
     <li class="publication-item">
       <div class="timeline-year">2025</div>
-      <div class="publication-title">Who's Pushing the Code? An Exploration of GitHub Impersonation</div>
-      <div class="publication-authors">Yueke Zhang, Anda Liang, Xiaohan Wang, et al.</div>
-      <div class="publication-venue">IEEE/ACM International Conference on Software Engineering (ICSE)</div>
-      
-      <div class="publication-tags">
-        <span class="publication-type-tag type-conference">conference</span>
-        <span class="research-domain-tag">Software Engineering</span>
-        <span class="research-domain-tag">Security</span>
-        <span class="research-domain-tag">GitHub Analysis</span>
+      <img src="/images/github-impersonation-teaser.png" alt="GitHub Impersonation Teaser" class="publication-teaser">
+      <div class="publication-content">
+        <div class="publication-title">Who's Pushing the Code? An Exploration of GitHub Impersonation</div>
+        <div class="publication-authors">Yueke Zhang, Anda Liang, Xiaohan Wang, et al.</div>
+        <div class="publication-venue">IEEE/ACM International Conference on Software Engineering (ICSE)</div>
+        
+        <div class="publication-tags">
+          <span class="publication-type-tag type-conference">conference</span>
+          <span class="research-domain-tag">SE</span>
+          <span class="research-domain-tag">HCI</span>
+        </div>
       </div>
     </li>
   </ul>
