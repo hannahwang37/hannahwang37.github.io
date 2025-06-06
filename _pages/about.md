@@ -94,8 +94,8 @@ Prior to my current work, I developed **TopologyGuidance**, a novel method to co
 
 .publication-teaser {
   flex-shrink: 0;
-  width: 150px;
-  height: 100px;
+  max-width: 250px;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   object-fit: cover;
