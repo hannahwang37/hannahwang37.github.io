@@ -59,6 +59,215 @@
     font-size: 1em;
   }
 
+  .about-intro {
+    max-width: 720px;
+    margin: 0 auto 1.25em;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: left;
+
+    h2 {
+      margin: 0 0 0.35em;
+      padding-bottom: 0;
+      border-bottom: 0;
+      font-size: $type-size-5;
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.95em;
+      line-height: 1.45;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .about-intro__divider {
+    margin: 0.75em auto 0;
+    width: 60%;
+    border: 0;
+    border-top: 1px dashed var(--global-border-color);
+  }
+
+  .about-columns {
+    margin: 1.5em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5em 2em;
+  }
+
+  .about-section {
+    margin: 2em 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .about-section--publications {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .about-section h2 {
+    margin: 0 0 0.75em;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: $type-size-5;
+  }
+
+  .about-section--publications {
+    width: 130%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-column__title {
+    margin: 0 0 0.5em;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  .about-education {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.85em;
+    line-height: 1.35;
+  }
+
+  .about-education__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 0.5em 0.25em;
+  }
+
+  .about-education__icon {
+    position: relative;
+    width: 0.8em;
+    height: 0.8em;
+    margin-top: 0.5em;
+  }
+
+  .about-education__icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    background-color: var(--global-text-color-light);
+  }
+
+  .about-education__degree {
+    font-weight: 600;
+  }
+
+  .about-education__school {
+    font-weight: 400;
+    color: var(--global-text-color);
+  }
+
+  .about-education__time {
+    font-size: 0.8em;
+    color: var(--global-text-color-light);
+  }
+
+  .about-interests {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.85em;
+    line-height: 1.45;
+  }
+
+  .about-interests li {
+    position: relative;
+    margin-bottom: 0.4em;
+    padding-left: 1em;
+    color: var(--global-text-color);
+  }
+
+  .about-interests li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--global-text-color-light);
+  }
+
+  @include breakpoint(max-width $small) {
+    .about-education__item {
+      border-bottom: none;
+    }
+  }
+
+  .about-timeline {
+    margin: 1.5em 0 0;
+    padding: 0 0 0 1.5em;
+    list-style: none;
+    border-left: 2px solid var(--global-border-color);
+    font-size: 0.8em;
+    max-width: 760px;
+  }
+
+  .about-timeline__item {
+    position: relative;
+    display: flex;
+    gap: 0.6em;
+    margin-bottom: 1rem;
+    padding-left: 1.5em;
+    line-height: 1.4;
+  }
+
+  .about-timeline__item:before {
+    content: "";
+    position: absolute;
+    left: -0.85em;
+    top: 0.25em;
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    background-color: var(--global-link-color);
+    box-shadow: 0 0 0 3px #fff;
+  }
+
+  .about-timeline__year {
+    flex: 0 0 90px;
+    font-weight: 600;
+    color: var(--global-text-color);
+    font-size: 1em;
+  }
+
+  .about-timeline__content {
+    flex: 1 1 auto;
+    font-size: 1em;
+  }
+
+  .about-timeline__content strong {
+    display: block;
+    font-size: 1em;
+  }
+
+  .about-timeline__content small {
+    display: block;
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
