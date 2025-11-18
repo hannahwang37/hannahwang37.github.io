@@ -361,6 +361,13 @@ redirect_from:
     </div>
   </li>
 
+  <li class="about-timeline__item">
+    <span class="about-timeline__year">🎓 2020</span>
+    <div class="about-timeline__content">
+      I was selected for Yingcai Honors College.
+    </div>
+  </li>  
+
 </ul>
 
 </section>
