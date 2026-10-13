@@ -237,6 +237,41 @@ redirect_from:
   <div class="publications-container">
     <ul class="publication-list">
       <li class="publication-item">
+        <div class="timeline-year">2026</div>
+        <div class="publication-content">
+          <div class="publication-title">STILL: Recovering Lowered STL Semantics for LLM-assisted C++ Decompilation</div>
+          <div class="publication-authors"><strong>Xiaohan Wang</strong>, Kevin Leach</div>
+          <div class="publication-meta-row">
+            <div class="publication-venue">EMNLP 2026 Main Conference — Accepted</div>
+          </div>
+          <div class="publication-links"><a href="https://arxiv.org/abs/2608.26408">arXiv</a></div>
+        </div>
+      </li>
+      <li class="publication-item">
+        <div class="timeline-year">2026</div>
+        <div class="publication-content">
+          <div class="publication-title">ICL4Decomp: Towards Re-executable Reverse Engineering</div>
+          <div class="publication-authors"><strong>Xiaohan Wang</strong>, Yuxin Hu, Kevin Leach</div>
+          <div class="publication-authors">Previously titled <em>Context-Guided Decompilation: A Step Towards Re-executability</em>.</div>
+          <div class="publication-meta-row">
+            <div class="publication-venue">Findings of EMNLP 2026 — Accepted</div>
+          </div>
+          <div class="publication-links"><a href="https://arxiv.org/abs/2511.01763">arXiv</a></div>
+        </div>
+      </li>
+      <li class="publication-item">
+        <div class="timeline-year">2026</div>
+        <div class="publication-content">
+          <div class="publication-title">Constraint-Guided Multi-Agent Decompilation for Executable Binary Recovery</div>
+          <div class="publication-authors">Yifan Zhang*, <strong>Xiaohan Wang*</strong>, Yueke Zhang, Yu Huang, Kevin Leach</div>
+          <div class="publication-authors">*Equal contribution.</div>
+          <div class="publication-meta-row">
+            <div class="publication-venue">NeurIPS 2026 Workshop on Evaluation of Interactive Agents — Accepted</div>
+          </div>
+          <div class="publication-links"><a href="https://arxiv.org/abs/2604.23940v2">arXiv</a></div>
+        </div>
+      </li>
+      <li class="publication-item">
         <div class="timeline-year">2025</div>
         <img src="/images/seeing-the-many.png" alt="Seeing the Many Teaser" class="publication-teaser">
         <div class="publication-content">
@@ -312,6 +347,27 @@ redirect_from:
   <h2>📰 News</h2>
 
   <ul class="about-timeline">
+  <li class="about-timeline__item">
+    <span class="about-timeline__year">Update — 10/2026</span>
+    <div class="about-timeline__content">
+      Our paper <em>“STILL: Recovering Lowered STL Semantics for LLM-assisted C++ Decompilation”</em> has been accepted to EMNLP 2026 Main Conference.
+    </div>
+  </li>
+
+  <li class="about-timeline__item">
+    <span class="about-timeline__year">Update — 10/2026</span>
+    <div class="about-timeline__content">
+      Our paper <em>“ICL4Decomp: Towards Re-executable Reverse Engineering”</em> has been accepted to Findings of EMNLP 2026.
+    </div>
+  </li>
+
+  <li class="about-timeline__item">
+    <span class="about-timeline__year">Update — 10/2026</span>
+    <div class="about-timeline__content">
+      Our paper <em>“Constraint-Guided Multi-Agent Decompilation for Executable Binary Recovery”</em> has been accepted to NeurIPS 2026 Workshop on Evaluation of Interactive Agents.
+    </div>
+  </li>
+
   <li class="about-timeline__item">
     <span class="about-timeline__year">🏆 11/2025</span>
     <div class="about-timeline__content">
