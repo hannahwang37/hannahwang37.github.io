@@ -1,0 +1,29 @@
+[
+  {
+    "asset": "still-overview.png",
+    "source": "https://arxiv.org/pdf/2608.26408",
+    "pdf_page": 4,
+    "figure": 2,
+    "pdf_sha256": "4530f73ef48253d9ec257e6ece8655a8a880d7271802ba4c6b746f20fad5b7c6",
+    "asset_sha256": "e2efc5d55ea6b532a5ba77a7b606036200b19a7f7eb6ef6f58ddf4120add24ad",
+    "extraction": "Poppler pdftoppm rasterization at 3200-pixel page height; crop retains complete figure and omits caption/body text"
+  },
+  {
+    "asset": "icl4decomp-overview.png",
+    "source": "https://arxiv.org/pdf/2511.01763",
+    "pdf_page": 3,
+    "figure": 1,
+    "pdf_sha256": "1c909098dd808e748bcf0be316fcbaf4a16cc732ef6caba14a4ebd48fa08bdb9",
+    "asset_sha256": "b965d537d3b5f3bf76aea7a185acef7c60c9b31518769b3e50e53d284cc972bc",
+    "extraction": "Poppler pdftoppm rasterization at 3200-pixel page height; crop retains complete figure and omits caption/body text"
+  },
+  {
+    "asset": "constraint-guided-overview.png",
+    "source": "https://arxiv.org/pdf/2604.23940v2",
+    "pdf_page": 3,
+    "figure": 2,
+    "pdf_sha256": "86b2d60e19c47f822811460fce1455828484350bac0bc47f29bca8400c5d9709",
+    "asset_sha256": "64bebf9df1a272ee33a55da71b7a4cb64b7dac49b369ea608334acae993b3e01",
+    "extraction": "Poppler pdftoppm rasterization at 3200-pixel page height; crop retains complete figure and omits caption/body text"
+  }
+]
