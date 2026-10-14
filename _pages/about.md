@@ -235,7 +235,6 @@ redirect_from:
         <div class="publication-content" tabindex="0" aria-label="Publication details">
           <div class="publication-title">ICL4Decomp: Towards Re-executable Reverse Engineering</div>
           <div class="publication-authors"><strong>Xiaohan Wang</strong>, Yuxin Hu, Kevin Leach</div>
-          <div class="publication-authors">Previously titled <em>Context-Guided Decompilation: A Step Towards Re-executability</em>.</div>
           <div class="publication-meta-row">
             <div class="publication-venue">Findings of EMNLP 2026</div>
           </div>
@@ -326,21 +325,21 @@ redirect_from:
 
   <ul class="about-timeline">
   <li class="about-timeline__item">
-    <span class="about-timeline__year">Update — 10/2026</span>
+    <span class="about-timeline__year">8/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“STILL: Recovering Lowered STL Semantics for LLM-assisted C++ Decompilation”</em> has been accepted to EMNLP 2026 Main Conference.
     </div>
   </li>
 
   <li class="about-timeline__item">
-    <span class="about-timeline__year">Update — 10/2026</span>
+    <span class="about-timeline__year">8/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“ICL4Decomp: Towards Re-executable Reverse Engineering”</em> has been accepted to Findings of EMNLP 2026.
     </div>
   </li>
 
   <li class="about-timeline__item">
-    <span class="about-timeline__year">Update — 10/2026</span>
+    <span class="about-timeline__year">9/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“Constraint-Guided Multi-Agent Decompilation for Executable Binary Recovery”</em> has been accepted to NeurIPS 2026 Workshop on Evaluation of Interactive Agents.
     </div>

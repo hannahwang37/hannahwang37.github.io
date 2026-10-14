@@ -202,11 +202,14 @@
   }
 
   .about-interests li:before {
-    content: "•";
+    content: "";
     position: absolute;
     left: 0;
-    top: 0;
-    color: var(--global-text-color-light);
+    top: 0.5em;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    background-color: var(--global-text-color-light);
   }
 
   @include breakpoint(max-width $small) {
@@ -236,13 +239,12 @@
   .about-timeline__item:before {
     content: "";
     position: absolute;
-    left: -0.85em;
-    top: 0.25em;
-    width: 0.65em;
-    height: 0.65em;
+    left: -0.7em;
+    top: 0.4em;
+    width: 0.35em;
+    height: 0.35em;
     border-radius: 50%;
-    background-color: var(--global-link-color);
-    box-shadow: 0 0 0 3px #fff;
+    background-color: var(--global-text-color-light);
   }
 
   .about-timeline__year {
