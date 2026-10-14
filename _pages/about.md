@@ -80,17 +80,22 @@ redirect_from:
 }
 
 .publication-overview {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 1 0;
   width: 100%;
   min-width: 0;
-  margin: 6px 0 8px;
+  min-height: 0;
+  margin: 4px 0;
 }
 
 .publication-teaser {
   order: 2;
   display: block;
   max-width: 100%;
-  width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -99,8 +104,10 @@ redirect_from:
 }
 
 .page__content .publication-overview .publication-teaser {
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -119,10 +126,14 @@ redirect_from:
   flex: 1;
   min-width: 0;
   min-height: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
   overflow-wrap: anywhere;
-  scrollbar-width: thin;
+}
+
+.publication-content > :not(.publication-overview) {
+  flex-shrink: 0;
 }
 
 .publication-title {
@@ -205,9 +216,18 @@ redirect_from:
   font-weight: bold;
   color: #95a5a6;
 }
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .publication-list { gap: 6px; }
-  .publication-item { padding: 20px 6px 6px; }
+  .publication-item {
+    aspect-ratio: auto;
+    padding: 20px 6px 6px;
+  }
+  .publication-overview { display: block; flex: 0 0 auto; }
+  .page__content .publication-overview .publication-teaser {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
   .publication-title { font-size: 9px; }
   .publication-authors, .publication-venue, .publication-links { font-size: 8px; }
   .timeline-year { font-size: 8px; right: 6px; }
@@ -218,7 +238,7 @@ redirect_from:
     <ul class="publication-list">
       <li class="publication-item">
         <div class="timeline-year">2026</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">STILL: Recovering Lowered STL Semantics for LLM-assisted C++ Decompilation</div>
           <div class="publication-authors"><strong>Xiaohan Wang</strong>, Kevin Leach</div>
           <div class="publication-meta-row">
@@ -232,7 +252,7 @@ redirect_from:
       </li>
       <li class="publication-item">
         <div class="timeline-year">2026</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">ICL4Decomp: Towards Re-executable Reverse Engineering</div>
           <div class="publication-authors"><strong>Xiaohan Wang</strong>, Yuxin Hu, Kevin Leach</div>
           <div class="publication-meta-row">
@@ -246,7 +266,7 @@ redirect_from:
       </li>
       <li class="publication-item">
         <div class="timeline-year">2026</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">Constraint-Guided Multi-Agent Decompilation for Executable Binary Recovery</div>
           <div class="publication-authors">Yifan Zhang*, <strong>Xiaohan Wang*</strong>, Yueke Zhang, Yu Huang, Kevin Leach</div>
           <div class="publication-authors">*Equal contribution.</div>
@@ -261,7 +281,7 @@ redirect_from:
       </li>
       <li class="publication-item">
         <div class="timeline-year">2025</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">
             Seeing the Many: Exploring Parameter Distributions Conditioned on Features in Surrogates
             <span class="tag">🏅Best Paper Award</span>
@@ -277,7 +297,7 @@ redirect_from:
       </li>    
       <li class="publication-item">
         <div class="timeline-year">2025</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">Topology Guidance: Controlling the Outputs of Generative Models via Vector Field Topology</div>
           <div class="publication-authors"><strong>Xiaohan Wang</strong> and Matthew Berger</div>
           <div class="publication-meta-row">
@@ -290,7 +310,7 @@ redirect_from:
       </li>
       <li class="publication-item">
         <div class="timeline-year">2025</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">Who's Pushing the Code? An Exploration of GitHub Impersonation</div>
           <div class="publication-authors">Yueke Zhang, Anda Liang, <strong>Xiaohan Wang</strong>, ..., Kevin Leach, and Yu Huang.</div>
           <div class="publication-meta-row">
@@ -303,7 +323,7 @@ redirect_from:
       </li>
       <li class="publication-item">
         <div class="timeline-year">2025</div>
-        <div class="publication-content" tabindex="0" aria-label="Publication details">
+        <div class="publication-content">
           <div class="publication-title">EmotionLens: Interactive visual exploration of the circumplex emotion space in literary works via affective word clouds</div>
           <div class="publication-authors">Bingyuan Wang, Qing Shi, <strong>Xiaohan Wang</strong>, You Zhou, ..., and Zeyu Wang.</div>
           <div class="publication-meta-row">
@@ -325,21 +345,21 @@ redirect_from:
 
   <ul class="about-timeline">
   <li class="about-timeline__item">
-    <span class="about-timeline__year">8/2026</span>
+    <span class="about-timeline__year">📄 8/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“STILL: Recovering Lowered STL Semantics for LLM-assisted C++ Decompilation”</em> has been accepted to EMNLP 2026 Main Conference.
     </div>
   </li>
 
   <li class="about-timeline__item">
-    <span class="about-timeline__year">8/2026</span>
+    <span class="about-timeline__year">📄 8/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“ICL4Decomp: Towards Re-executable Reverse Engineering”</em> has been accepted to Findings of EMNLP 2026.
     </div>
   </li>
 
   <li class="about-timeline__item">
-    <span class="about-timeline__year">9/2026</span>
+    <span class="about-timeline__year">📄 9/2026</span>
     <div class="about-timeline__content">
       Our paper <em>“Constraint-Guided Multi-Agent Decompilation for Executable Binary Recovery”</em> has been accepted to NeurIPS 2026 Workshop on Evaluation of Interactive Agents.
     </div>
