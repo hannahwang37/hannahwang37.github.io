@@ -9,10 +9,9 @@ redirect_from:
 
 <div class="about-intro">
 <p>
-  I am <strong>Xiaohan Wang</strong>, a Ph.D. student in Computer Science at <strong>Vanderbilt University</strong>. 
-  My research aims to design representations for different data modalities and leverage AI/machine learning methods to make data exploration and understanding more efficient and accessible.
-  <!-- My research spans <strong>AI for Software Engineering (AI4SE)</strong>, where I study , 
-  and <strong>machine learning for scientific visual analytics (ML4SciVIS)</strong>, where I have developed visualization methods for exploring large-scale scientific simulation data. -->
+  I am <strong>Xiaohan Wang</strong>, a Ph.D. student in Computer Science at <strong>Vanderbilt University</strong>, advised by Kevin Leach.
+  My research focuses on reliable LLM-assisted decompilation, combining semantic recovery, program analysis, and behavioral feedback to recover executable code from binaries.
+  Previously, I worked with Matthew Berger on machine learning for scientific visualization and the exploration of simulation data.
 </p>
 </div>
 
@@ -336,6 +335,14 @@ redirect_from:
       </li>      
     </ul>
   </div>
+</section>
+
+---
+
+<section class="about-section">
+  <h2>🔬 Projects</h2>
+
+  <p>I work as a graduate research assistant on the ARPA-H <a href="https://arpa-h.gov/explore-funding/programs/digiheals"><strong>DIGIHEALS</strong></a> and <a href="https://arpa-h.gov/explore-funding/programs/upgrade"><strong>UPGRADE</strong></a> projects at Vanderbilt University.</p>
 </section>
 
 ---
