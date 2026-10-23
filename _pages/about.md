@@ -9,9 +9,8 @@ redirect_from:
 
 <div class="about-intro">
 <p>
-  I am <strong>Xiaohan Wang</strong>, a Ph.D. student in Computer Science at <strong>Vanderbilt University</strong>, advised by Kevin Leach.
+  I am <strong>Xiaohan Wang</strong>, a Ph.D. student in Computer Science at <strong>Vanderbilt University</strong>, advised by <a href="https://kjl.name/">Kevin Leach</a>.
   My research focuses on reliable LLM-assisted decompilation, combining semantic recovery, program analysis, and behavioral feedback to recover executable code from binaries.
-  Previously, I worked with Matthew Berger on machine learning for scientific visualization and the exploration of simulation data.
 </p>
 </div>
 
