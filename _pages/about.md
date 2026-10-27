@@ -339,14 +339,6 @@ redirect_from:
 ---
 
 <section class="about-section">
-  <h2>🔬 Projects</h2>
-
-  <p>I work as a graduate research assistant on the ARPA-H <a href="https://arpa-h.gov/explore-funding/programs/digiheals"><strong>DIGIHEALS</strong></a> and <a href="https://arpa-h.gov/explore-funding/programs/upgrade"><strong>UPGRADE</strong></a> projects at Vanderbilt University.</p>
-</section>
-
----
-
-<section class="about-section">
   <h2>📰 News</h2>
 
   <ul class="about-timeline">
