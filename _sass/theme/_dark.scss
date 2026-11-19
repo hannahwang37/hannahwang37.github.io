@@ -33,22 +33,32 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Dark theme for the site */
+/* Dark theme for the site — Minimalist Warm Obsidian */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #a6a198;
+    --global-bg-color                   : #161513;
+    --global-footer-bg-color            : #161513;
+    --global-border-color               : #2c2a26;
+    --global-dark-border-color          : #3a3732;
+    --global-code-background-color      : #211f1c;
+    --global-code-text-color            : #e8e5de;
+    --global-fig-caption-color          : #a6a198;
+    --global-link-color                 : #eceae4;
+    --global-link-color-hover           : #ffffff;
+    --global-link-color-visited         : #d5d1c8;
+    --global-masthead-link-color        : #eceae4;
+    --global-masthead-link-color-hover  : #a6a198;
+    --global-text-color                 : #eceae4;
+    --global-text-color-light           : #9b968d;
+    --global-thead-color                : #24221e;
+
+    /* Minimalist editorial tokens */
+    --surface-bg                        : #201e1b;
+    --surface-hover-border              : #545049;
+    --accent-muted                      : #aca79e;
+    --link-underline                    : #57534c;
+    --award-text                        : #d6b888;
+    --award-border                      : #594934;
+    --award-bg                          : #28221a;
+    --masthead-bg                       : rgba(22, 21, 19, 0.92);
 }
