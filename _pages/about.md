@@ -13,7 +13,7 @@ redirect_from:
     My research centers on reliable LLM-assisted decompilation and binary analysis, combining semantic recovery, program analysis, and behavioral feedback to reconstruct readable, executable code from compiled binaries.
   </p>
   <p>
-    As a Graduate Research Assistant at Vanderbilt, I contribute to healthcare cybersecurity and autonomous defense efforts under the <strong>ARPA-H DIGIHEALS</strong> and <strong>ARPA-H UPGRADE</strong> programs. Earlier in my Ph.D. and undergraduate studies, I worked on machine learning for scientific visualization and neural field exploration with Prof. Matthew Berger, and held research internships at HKUST and the Shandong Future Network Research Institute.
+    As a Graduate Research Assistant at Vanderbilt, I contribute to healthcare cybersecurity and autonomous defense efforts under the <strong>ARPA-H DIGIHEALS</strong> and <strong>ARPA-H UPGRADE</strong> programs. Earlier in my Ph.D. and undergraduate studies, I worked on machine learning for scientific visualization and neural field exploration with Prof. Matthew Berger, and held a research internship at The Hong Kong University of Science and Technology.
   </p>
 </div>
 
@@ -170,32 +170,6 @@ redirect_from:
 </section>
 
 <section class="about-section">
-  <h2>Projects</h2>
-
-  <ul class="project-list">
-    <li class="project-item">
-      <div class="project-header">
-        <div class="project-title">ARPA-H UPGRADE — Universal PatchinG and Remediation for Autonomous DEfense</div>
-        <span class="project-role">Graduate Research Assistant &middot; Vanderbilt University</span>
-      </div>
-      <p class="project-desc">
-        Contributing to autonomous cyber-defense and automated vulnerability remediation for hospital IT environments and clinical infrastructure, enabling assured patching without disrupting patient care.
-      </p>
-    </li>
-
-    <li class="project-item">
-      <div class="project-header">
-        <div class="project-title">ARPA-H DIGIHEALS — Digital Health Security</div>
-        <span class="project-role">Graduate Research Assistant &middot; Vanderbilt University</span>
-      </div>
-      <p class="project-desc">
-        Conducting research on binary analysis, reverse engineering, and automated security assurance to strengthen the resilience of digital health applications and medical software systems.
-      </p>
-    </li>
-  </ul>
-</section>
-
-<section class="about-section">
   <h2>News</h2>
 
   <ul class="minimal-list">
@@ -272,7 +246,7 @@ redirect_from:
     <li class="minimal-list__item">
       <span class="minimal-list__date">2020</span>
       <div class="minimal-list__text">
-        I was selected for Yingcai Honors College.
+        I was selected for Yingcai Honors College at Nanjing Normal University.
       </div>
     </li>
   </ul>
